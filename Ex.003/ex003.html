@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon-js.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Ex.001/style.css">
+    <title>Curso JS Guanabara</title>
+    <style>
+        main{
+            padding: 10px;
+        }
+        h2, h3{
+            width: 100%;
+            margin: 0px;
+            background-image: linear-gradient(to right, rgb(201, 110, 0), rgba(201, 111, 0, 0));
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tratamento de Dados</h1>
+        <p></p>
+    </header>
+
+
+    <main>
+        <h2>Método Prompt()</h2> <br>
+    <p>
+        O método prompt() faz com que uma mensagem seja exibida para o usuário e o processamento do software pare, aguardando uma resposta do 
+        usuário. <br>
+        <strong>Veja um exemplo:</strong> <br> <br>
+        <mark>prompt(“Digite um número”);</mark> <br> <br>
+        Aqui a frase <strong>“Digite um número”</strong> será exibida e o programa vai aguardar uma interação do usuário. <br>
+        Mas assim que o usuário digitar algo e pressionar Enter, precisamos armazenar isso em algum lugar. Senão o programa<strong> “perde”</strong> o que foi digitado.
+    </p>   
+
+    <p>
+        Então precisamos guardar o que foi informado em uma variável, utilizando um 
+        operador de atribuição, assim:<br> <br>
+        <mark>var primeiro = prompt(“Digite um número”);</mark><br> <br>
+        Agora, o que o usuário digitar será armazenado na variável com o nome primeiro.
+    </p> 
+    <h2>O que e um Number em JavaScript?</h2>  <br>
+    <p>O objeto JavaScript <strong>Number</strong> é um objeto encapsulado que permite 
+       você trabalhar com valores numéricos. Um objeto Number é criado utilizando o 
+       construtor Number().      
+    </p>
+    <p><img src="print/print-number.png" alt="print-number"></p>
+    <p><img src="print/print-number2.png" alt="print-number2"></p>
+    <p>O primeiro print o <mark>alert</mark> foi feito no formato com 
+       <mark>concatenaçao</mark> 
+       e o segundo print foi feito com <mark>template string</mark>, 
+       veja a diferenca do codigo e faça de sua preferencia.
+    </p>
+    <h2>Formatando Strings</h2>
+    <p>
+        <strong>var s</strong> = '<strong>JavaScript</strong>' <br>
+        'Estou aprendendo <strong>s</strong>'<strong>  \\Não fez   
+        interpolaçao.</strong> <br>
+        'Estou aprendendo' + <strong>s</strong> \\Usou concatenaçao. 
+        <br>
+        ´Estou aprendendo ${s}´  \\Usou template string.
+    </p>
+    <h3>Algumas dicas de formatar strings</h3>
+    <p>s.length          //quantos caracteres a string tem</p>
+    <p>s.toUpperCase()  //tudo para maiúsculas</p>
+    <p>s.LowerCase()   //tudo para minúsculas</p>
+    <p>Ex: <br> <img src="print/print-number3.png" alt="print- 
+       number3">
+    </p>
+
+       
+    </main>
+    <script>
+        var n1 = Number(window.prompt('Digite um numero: '));
+        var n2 = Number(window.prompt('Digite outro numero'));
+        var s = n1 + n2
+        window.alert(`O resultado de ${n1} + ${n2} e de ${s}`);
+
+        var nome = window.prompt('Qual e o seu nome?')
+        document.write(`ola ${nome}! seu nome tem ${nome.length} 
+        letras.`)
+    </script>
+    
+</body>
+</html>

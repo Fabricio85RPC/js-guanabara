@@ -14,5 +14,16 @@ header{
 
 
 nav{
-    
+    background-color: darkorange;
+    text-align: center;
+    padding: 6px;
+}
+nav img{
+    border-radius: 50%;
+    width: 50px;
+    padding: 3px;
+}
+nav img:hover{
+    box-shadow: 1px 1px 1px 4px rgba(244, 184, 88, 0.332);
+    width: 52px;
 }

@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Curso JS Guanabara</title>
     <style>
+        
         main {
             padding: 10px;
         }
         main p{
             padding: 10px;
             color: white;
+            max-width: 1000px;
         }
-        h3{color: rgb(201, 110, 0);}
+        main h3{color: rgb(201, 110, 0);}
         mark{
             background-color: darkturquoise;
             padding: 1px;
         }
-        img{
-            width: 300px;
+       
+    
+        nav{
+            display: block;
+            bottom: 0;
+            margin: auto;
         }
     </style>
 </head>
@@ -30,6 +36,7 @@
         <h1>JS Guanabara</h1>
         <p>Primeiro exercicio do curso.</p>
     </header>
+
     <main>
         <h2>Disparar Primeiras Janelas com Scripts </h2>
         <p>Dentro de script colocamos uma janela de alerta, janela de confirmação e uma janela de prompt.
@@ -41,17 +48,18 @@
         <h3>prompt</h3>
         <p><mark>window.prompt('Qual é seu nome?')</mark></p>
         <h4>Print do codigo</h4>
-        <p><img src="print/print-script1.png" alt="Print do comando"></p>
+        <p><img src="print/print-script1.png" alt="Print do comando" id="img1"></p>
     </main>
+    <script>
+        
+        window.confirm('Está gostando de JS?')
+       var nome = window.prompt('Qual é seu nome?')
+       window.alert('Foi um grande prazer te conhecer, '  + nome + '!')
+    </script> 
+
     <nav>
-        <a href="#"><img src="" alt=""></a>
-        <a href="ex002.html"><img src="" alt=""></a>
+        <a href="#"><img src="../Imagens/home-laranja.png" alt="logo-home"></a>
+        <a href="../Ex.002/ex002.html"><img src="../Imagens/avancar-laranja.jpg" alt="logo-avançar"></a>
     </nav>
-    
-   <script>
-    window.alert('Minha primeira menssagem')
-    window.confirm('Está gostando de JS?')
-    window.prompt('Qual é seu nome?')
-   </script> 
 </body>
 </html>
