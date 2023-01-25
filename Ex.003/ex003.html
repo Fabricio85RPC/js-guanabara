@@ -16,8 +16,6 @@
             margin: 0px;
             background-image: linear-gradient(to right, rgb(201, 110, 0), rgba(201, 111, 0, 0));
         }
-
-
     </style>
 </head>
 <body>
@@ -44,6 +42,7 @@
         <mark>var primeiro = prompt(“Digite um número”);</mark><br> <br>
         Agora, o que o usuário digitar será armazenado na variável com o nome primeiro.
     </p> 
+
     <h2>O que e um Number em JavaScript?</h2>  <br>
     <p>O objeto JavaScript <strong>Number</strong> é um objeto encapsulado que permite 
        você trabalhar com valores numéricos. Um objeto Number é criado utilizando o 
@@ -56,6 +55,7 @@
        e o segundo print foi feito com <mark>template string</mark>, 
        veja a diferenca do codigo e faça de sua preferencia.
     </p>
+
     <h2>Formatando Strings</h2>
     <p>
         <strong>var s</strong> = '<strong>JavaScript</strong>' <br>
@@ -65,26 +65,20 @@
         <br>
         ´Estou aprendendo ${s}´  \\Usou template string.
     </p>
+
     <h3>Algumas dicas de formatar strings</h3>
     <p>s.length          //quantos caracteres a string tem</p>
     <p>s.toUpperCase()  //tudo para maiúsculas</p>
     <p>s.LowerCase()   //tudo para minúsculas</p>
     <p>Ex: <br> <img src="print/print-number3.png" alt="print- 
        number3">
-    </p>
-
-       
+    </p> 
     </main>
     <script>
         var n1 = Number(window.prompt('Digite um numero: '));
         var n2 = Number(window.prompt('Digite outro numero'));
         var s = n1 + n2
         window.alert(`O resultado de ${n1} + ${n2} e de ${s}`);
-
-        var nome = window.prompt('Qual e o seu nome?')
-        document.write(`ola ${nome}! seu nome tem ${nome.length} 
-        letras.`)
     </script>
-    
 </body>
 </html>
