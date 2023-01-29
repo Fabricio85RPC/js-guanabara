@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon-js.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Ex.001/style.css">
+    <title>Curso JS Guanabara</title>
+    <style>
+        body{
+            
+            background-color: rgba(88, 27, 242, 0.855);
+        }
+        main{
+            background-color: white;
+            margin: auto; 
+            margin-top: -5px; 
+            width: 460px;
+        }
+        main p,h2,div, img{
+            margin: 5px;
+            padding: 3px;
+            padding-left: 6px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estudos de DOM</h1>
+    </header>
+    <main>
+        <H2>Árvore DOM</H2>
+        <img src="print/print-arvore-dom.png" alt="print-arvore-dom">
+        <p><strong>JavaScript</strong> pode alterar o conteúdo HTML</p>
+        <p>Um dos muitos métodos JavaScript HTML é <mark>getElementById()</mark></p>
+        <h2>Alguns exemplos</h2>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+        <div id="a1">Clique em mim</div>
+    </main>
+    <script>
+        var n = window.document.getElementById('a1')
+        var d = window.document.querySelector('div#a1')[0]
+        n.style
+        
+    </script>    
+</body>
+</html>
