@@ -12,6 +12,8 @@
             
             background-color: rgba(88, 27, 242, 0.855);
         }
+
+
         main{
             background-color: white;
             margin: auto; 
@@ -23,7 +25,16 @@
             padding: 3px;
             padding-left: 6px;
         }
+        img{
+            width: 270px;
+        }
 
+        nav{
+            display: block;
+            bottom: 0;
+            margin: auto;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -39,12 +50,16 @@
         <p>Aqui vai o resultado</p>
         <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
         <div id="a1">Clique em mim</div>
+        <img src="print/print-getElementById.png" alt="">
     </main>
+    <nav>
+        <a href="../Ex.005/ex005.html"><img src="../Imagens/voltar-laranja.jpg" alt="" class="menu"></a>
+        <a href="#"><img src="../Imagens/home-laranja.png" alt="logo-home" class="menu"></a>
+        <a href="../Ex.007/ex007.html"><img src="../Imagens/avancar-laranja.jpg" alt="logo-avançar" class="menu"></a>
+    </nav>
     <script>
         var n = window.document.getElementById('a1')
-        var d = window.document.querySelector('div#a1')[0]
-        n.style
-        
+        n.style.backgroundColor = 'lightblue'
     </script>    
 </body>
 </html>

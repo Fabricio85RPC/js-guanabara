@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Imagens/favicon-js.png" type="image/x-icon">
+    <link rel="stylesheet" href="../Ex.001/style.css">
+    <title>Curso JS Guanabara</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: orangered;
+        }
+        main{
+            background-color: white;
+            margin: 0 -10px 0 -10px;
+            
+            
+        }
+        
+        #area{
+            background-color: rgb(1, 206, 1);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            
+            margin: 5px;
+            margin: auto;
+        }
+        p img{
+            display: block;
+            width: 300px;
+            padding: 5px 0 0px 0;
+            margin: auto;
+            text-align: center;
+        }
+
+        nav{
+            display: block;
+            bottom: 0;
+            margin: auto;
+            margin-top: 5px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estudos de DOM</h1>
+    </header>
+
+
+    <main>
+        <div id="area"  >
+            Interagir ...
+        </div>
+        <p><img src="interacao-print.png" alt=""></p>
+        <p>Esse exemlpo e so uma possibilidade </p>
+    </main>
+
+
+    <nav>
+        <a href="../Ex.005/ex005.html"><img src="../Imagens/voltar-laranja.jpg" alt="" class="menu"></a>
+        <a href="#"><img src="../Imagens/home-laranja.png" alt="logo-home" class="menu"></a>
+        <a href="../Ex.007/ex007.html"><img src="../Imagens/avancar-laranja.jpg" alt="logo-avançar" class="menu"></a>
+    </nav>
+
+
+    <script>
+        var a = document.getElementById('area')
+
+        a.addEventListener("click", clicar)
+        a.addEventListener("mouseenter", entrou)
+        a.addEventListener("mouseout", saiu)
+
+        function clicar() {
+            a.innerHTML = 'clicou'
+            a.style.backgroundColor = 'red'
+        }
+
+        function entrou() {
+            a.innerHTML = 'entrou'
+        }
+
+        function saiu() {
+            a.innerHTML = 'Interagir...'
+        }
+    </script>
+</body>
+</html>
