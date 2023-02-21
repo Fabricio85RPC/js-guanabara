@@ -9,45 +9,41 @@
     <title>Curso JS Guanabara</title>
     <style>
         body{
-            
-            background-color: orangered;
+            background-color: rgba(255, 68, 0, 0.893);
         }
         main{
-            background-color: white;
             margin: auto;
             width: 89%;
             padding: 0 -10px 0 -10px;
-            
-            
+            padding: 5px;
         }
-        
-        #area{
-            background-color: rgb(1, 206, 1);
-            width: 200px;
-            height: 200px;
-            line-height: 200px;
+        input{
+            width: 50px;
+        }
+        fieldset{
+            background-color: white;
+            border:solid 2px black;
+            width: 210px;
+            padding: 5px;
+        }
+        legend{
             text-align: center;
+            font-weight: bold;
             
-            margin: 5px;
-            margin: auto;
         }
-
-        p{text-align: center;}
         p img{
-            display: block;
-            width: 300px;
-            padding: 5px 0 0px 0;
-            margin: auto;
-            text-align: center;
+            width: 390px;
+            padding-top: 5px;
         }
 
         nav{
             display: block;
+            position: fixed;
+            width: 100%;
             bottom: 0;
             margin: auto;
             margin-top: 5px;
         }
-       
     </style>
 </head>
 <body>
@@ -55,42 +51,31 @@
         <h1>Estudos de DOM</h1>
     </header>
 
-
     <main>
-        <div id="area"  >
-            Interagir ...
-        </div>
-        <p><img src="interacao-print.png" alt=""></p>
-        <p>Esse exemplo e so uma possibilidade de varias que serao aprendidas durante o 
-           curso.</p>
+        <h2>Somando numeros</h2>
+        <fieldset>
+            <legend>Teste</legend>
+        <input type="number" name="txn1" id="txn1"> +
+        <input type="number" name="txn2" id="txn2"> <input type="button" 
+        value="Somar" onclick="somar()">
+        <div id="res"></div>
+        </fieldset> 
+        <p><img src="print/script-somar.png" alt="print do codigo"></p>
     </main>
-
-
-    <nav>
+     <nav>
         <a href="../Ex.006/ex006.html"><img src="../Imagens/voltar-laranja.jpg" alt="" class="menu"></a>
         <a href="#"><img src="../Imagens/home-laranja.png" alt="logo-home" class="menu"></a>
         <a href="../Ex.008/ex008.html"><img src="../Imagens/avancar-laranja.jpg" alt="logo-avançar" class="menu"></a>
     </nav>
-
-
     <script>
-        var a = document.getElementById('area')
-
-        a.addEventListener("click", clicar)
-        a.addEventListener("mouseenter", entrou)
-        a.addEventListener("mouseout", saiu)
-
-        function clicar() {
-            a.innerHTML = 'clicou'
-            a.style.backgroundColor = 'red'
-        }
-
-        function entrou() {
-            a.innerHTML = 'entrou'
-        }
-
-        function saiu() {
-            a.innerHTML = 'Interagir...'
+        function somar() {
+            var tn1 = document.getElementById('txn1')
+            var tn2 = document.getElementById('txn2')
+            var n1  = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1+n2
+            var res = document.getElementById('res')
+            res.innerHTML = `O resultado dessa soma e ${s}.`
         }
     </script>
 </body>
